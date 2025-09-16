@@ -5,8 +5,15 @@ date: "September 20, 2025"
 output:
   html_document:
     toc: true
+<<<<<<< HEAD
 editor_options: 
   markdown: 
+=======
+  pdf_document:
+    toc: true
+editor_options:
+  markdown:
+>>>>>>> 2ff06f15526d6988832d133980a39778bbb95e59
     wrap: 72
 ---
 
@@ -64,7 +71,7 @@ instructions:
     this cell (it should look something like this
     <https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl>).
 
-YOUR LAB GITHUB REPO LINK GOES HERE
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17>
 
 ## Editing R Markdown documents
 
@@ -103,7 +110,10 @@ R code (it does not need to be complicated, but it should have an
 output). Ensure that you can render/knit the document after you add that
 chunk.
 
-YOUR ANSWER GOES HERE
+```{r value of squared e}
+x <- exp(1)^2
+print(round(x, 2))
+```
 
 #### Question 3
 
@@ -114,7 +124,14 @@ Try using the pop-up-like menu to navigate between the named code chunks
 Don't forget to knit/render the document after you make this change to
 ensure everything is still working.
 
-YOUR ANSWER GOES HERE
+```{r calculate average score}
+math_score <- 89
+stat_score <- 92
+cs_score <- 70
+
+mean_score <- mean(c(math_score, stat_score, cs_score))
+print(round(mean_score, 2))
+```
 
 #### Question 4
 
@@ -123,10 +140,21 @@ rubric={mechanics:1,reasoning:1}
 Create a new code chunk that uses a code chunk option. Write out in your
 own words what the code chunk option is doing.
 
-YOUR ANSWER GOES HERE
+Added the option echo = FALSE which hides the code chunk and only
+displays the result (default is TRUE)
+
+<<<<<<< HEAD
+#### Multiple code chunk options
+
+=======
+```{r echo = FALSE}
+my_var <- "Hi! this is a surprise string"
+print(my_var)
+```
 
 #### Multiple code chunk options
 
+>>>>>>> 2ff06f15526d6988832d133980a39778bbb95e59
 To have multiple code chunk options you separate them by a comma. For
 example, if in addition to suppressing warnings, we want to run the code
 but not output the results, then we can add the `include = FALSE`
@@ -140,7 +168,31 @@ Create a new code chunk that uses at least two code chunk options. At
 least one must be different to the ones mentioned above. Write in your
 own words what each code chunk option is doing.
 
-YOUR ANSWER GOES HERE
+ADDED 2 options
+
+-   **warning = FALSE** makes the output not display any warnings
+    associated with running the chunk for
+
+    this case the text "G2;H2;Warningh: [38;5;254mRemoved 2 rows
+    containing missing values or values outside the scale range
+    (`geom_point()`).[39mg" is removed if we add warning = FALSE
+
+-   **fig.width = 5** sets the width of the output figure to 5 (inches)
+    (default is 7)
+
+```{r warning = FALSE, fig.width = 5}
+library(ggplot2)
+library(palmerpenguins)
+my_plot <- ggplot(data = penguins, mapping = aes(x = bill_length_mm, 
+                                      y = body_mass_g,
+                                     colour = species)) +
+    geom_point(size = 2) +
+    xlab("Bill length (mm)") +
+    ylab("Body mass (g)") +
+    theme_bw() +
+    theme(text = element_text(size = 18))
+my_plot
+```
 
 ### YAML Header and document output options
 
@@ -226,7 +278,11 @@ knit/render the document. Note the different output. Add and commit that
 rendered both the `.html` and `.pdf` files to the GitHub repository for
 this lab and paste the two links below this question.
 
-YOUR ANSWER GOES HERE
+**7.1** html link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q7.html>
+
+**7.2** pdf link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q7.pdf>
 
 #### Question 8
 
@@ -243,7 +299,13 @@ rubric={mechanics:6}
     repository for this homework. Paste a link to these files as your
     answer below.
 
-YOUR ANSWER GOES HERE
+**8**
+
+Rmd link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q8.Rmd>
+
+html link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q8.html>
 
 #### Question 9 (Optional)
 
@@ -256,7 +318,9 @@ rubric={mechanics:1,reasoning:1}
     GitHub.ubc.ca in your homework repo? What do you see? How is it
     rendered?
 
-YOUR ANSWER GOES HERE
+The markdown document is automatically rendered to be a human readable
+webpage unlike the html file. The markdown document is rendered by its
+own markdown engine through GitHub Flavored Markdown syntax.
 
 #### Question 10
 
@@ -315,5 +379,5 @@ before exporting!**
 
 ```{r}
 # Save your notebook first, then run this cell to export your submission.
-ottr::export("lab3.Rmd", pdf = TRUE)
+#ottr::export("lab3.Rmd", pdf = TRUE)
 ```
