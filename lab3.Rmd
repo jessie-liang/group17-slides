@@ -5,15 +5,10 @@ date: "September 20, 2025"
 output:
   html_document:
     toc: true
-<<<<<<< HEAD
-editor_options: 
-  markdown: 
-=======
   pdf_document:
     toc: true
 editor_options:
   markdown:
->>>>>>> 2ff06f15526d6988832d133980a39778bbb95e59
     wrap: 72
 ---
 
@@ -143,18 +138,13 @@ own words what the code chunk option is doing.
 Added the option echo = FALSE which hides the code chunk and only
 displays the result (default is TRUE)
 
-<<<<<<< HEAD
 #### Multiple code chunk options
 
-=======
 ```{r echo = FALSE}
 my_var <- "Hi! this is a surprise string"
 print(my_var)
 ```
 
-#### Multiple code chunk options
-
->>>>>>> 2ff06f15526d6988832d133980a39778bbb95e59
 To have multiple code chunk options you separate them by a comma. For
 example, if in addition to suppressing warnings, we want to run the code
 but not output the results, then we can add the `include = FALSE`
@@ -241,7 +231,7 @@ so that you include an `author` (yourself) and a `date` (lab due date).
 Include what you added below here as well as a fenced Markdown code
 block.
 
-```{}
+```         
 author: "Omowunmi Obadero"
 date: "September 20, 2025"
 ```
