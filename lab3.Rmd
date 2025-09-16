@@ -55,7 +55,7 @@ You receive mark for submitting your lab correctly, please follow these instruct
 - Upload a `.Rmd` version of your assignment to Gradescope.
 - Include a clickable link to your GitHub repo for the lab just below this cell (it should look something like this https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl).
 
-YOUR LAB GITHUB REPO LINK GOES HERE
+https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17
 
 ## Editing R Markdown documents
 
@@ -95,7 +95,10 @@ Create a new code chunk below using the r language engine that runs some R code
 but it should have an output).
 Ensure that you can render/knit the document after you add that chunk.
 
-YOUR ANSWER GOES HERE
+```{r value of squared e}
+x <- exp(1)^2
+print(round(x, 2))
+```
 
 #### Question 3
 rubric={mechanics:1}
@@ -106,7 +109,14 @@ Try using the pop-up-like menu to navigate between the named code chunks
 Don't forget to knit/render the document
 after you make this change to ensure everything is still working.
 
-YOUR ANSWER GOES HERE
+```{r calculate average score}
+math_score <- 89
+stat_score <- 92
+cs_score <- 70
+
+mean_score <- mean(c(math_score, stat_score, cs_score))
+print(round(mean_score, 2))
+```
 
 #### Question 4
 rubric={mechanics:1,reasoning:1}
