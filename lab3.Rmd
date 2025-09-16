@@ -62,7 +62,7 @@ instructions:
     this cell (it should look something like this
     <https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl>).
 
-https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17>
 
 ## Editing R Markdown documents
 
@@ -235,7 +235,11 @@ knit/render the document. Note the different output. Add and commit that
 rendered both the `.html` and `.pdf` files to the GitHub repository for
 this lab and paste the two links below this question.
 
-YOUR ANSWER GOES HERE
+**7.1** html link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q789.html>
+
+**7.2** pdf link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q789.pdf>
 
 #### Question 8
 
