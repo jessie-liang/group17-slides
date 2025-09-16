@@ -256,7 +256,13 @@ rubric={mechanics:6}
     repository for this homework. Paste a link to these files as your
     answer below.
 
-YOUR ANSWER GOES HERE
+**8**
+
+Rmd link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q8.Rmd>
+
+html link:
+<https://github.ubc.ca/mds-2025-26/DSCI_521_lab3_group17/blob/master/q8.html>
 
 #### Question 9 (Optional)
 
