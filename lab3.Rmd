@@ -346,7 +346,37 @@ tools (e.g., R Markdown and Jupyter) and non-reproducible tools (Word,
 Powerpoint, Keynote, etc) for presentations and reports. Include
 advantages and disadvantages for each.
 
-YOUR ANSWER GOES HERE
+**Reproducible tools**:
+
+- Advantages: 
+
+(1) The data, analysis code, and output are all 
+integrated together, which means they are literate programming documents. So the whole presentation/report can be 
+fully reproduced as long as we have the source files, and the files are very readable and dynamic since they contain
+both the code and the explaining text. (2) Outputs can be rendered into multiple formats easily, such as `html`, `pdf`, etc.
+(3) Version control can be easily embedded, facilitating collaboration among authors.
+
+- Disadvantages: 
+
+(1) It is less user-friendly. It actually requires knowledge and training of version control and coding.
+(2) There could be potential merge conflicts, which makes collaboration a bit more difficult than live editing.
+
+**Non-reproducible tools**:
+
+- Advantages: 
+
+(1) It is more user-friendly in the sense that it is easier to create and modify the presentation/report.
+In other words, users do not have to have deep understanding of coding and version control. So these tools are a great
+start for beginners. (2) There are more templates published, so using these tools can produce a more visual-appealing 
+presentation/report. (3) Some of these tools allow simultaneous editing of multiple authors, and the results are updated
+instantaneously, without having to go through the complicated version control system.
+
+- Disadvantages: 
+
+(1) Source code cannot be easily integrated. Every time the data is updated, we have to re-create
+the presentation/report again to update the values manually. (2) It cannot track different versions of the presentation/report
+in the history as the version control does. So we cannot revert back to a previous version if we want to. (3) The options of 
+output rendering are limited.
 
 ## Free Point
 
@@ -369,5 +399,5 @@ before exporting!**
 
 ```{r}
 # Save your notebook first, then run this cell to export your submission.
-#ottr::export("lab3.Rmd", pdf = TRUE)
+# ottr::export("lab3.Rmd", pdf = TRUE)
 ```
