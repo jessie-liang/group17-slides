@@ -303,7 +303,9 @@ rubric={mechanics:1,reasoning:1}
     GitHub.ubc.ca in your homework repo? What do you see? How is it
     rendered?
 
-YOUR ANSWER GOES HERE
+The markdown document is automatically rendered to be a human readable
+webpage unlike the html file. The markdown document is rendered by its
+own markdown engine through GitHub Flavored Markdown syntax.
 
 #### Question 10
 
