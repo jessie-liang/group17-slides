@@ -23,8 +23,18 @@ print(a+b)
 
 ## Slide 1.2
 
-- Eat eggs
-- Drink coffee
+- Eat pancakes
+```{r}
+print("I am eating:")
+
+print("1 large pancake + 2 mini pancakes.")
+```
+
+- Drink Tea
+
+```{r}
+print("Together with a medium-sized matcha!")
+```
 
 # Section 2
 
