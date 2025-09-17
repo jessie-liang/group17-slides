@@ -1,12 +1,14 @@
 ---
 title: "Habits"
-author: "John Doe"
-format: revealjs
+author: "Group17"
+format:
+  revealjs:
+    embed-resources: true
 ---
 
-# In the morning
+# Section 1
 
-## Getting up
+## Slide 1.1
 
 - Turn off alarm
 - Get out of bed
@@ -19,19 +21,19 @@ b<-2
 print(a+b)
 ```
 
-## Breakfast
+## Slide 1.2
 
 - Eat eggs
 - Drink coffee
 
-# In the evening
+# Section 2
 
-## Dinner
+## Slide 2.1
 
 - Eat spaghetti
 - Drink wine
 
-## Going to sleep
+## Slide 2.2
 
 - Get in bed
 - Count sheep
