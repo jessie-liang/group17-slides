@@ -30,8 +30,15 @@ print(a+b)
 
 ## Slide 2.1
 
-- Eat spaghetti
 - Drink wine
+```{r}
+#| label: slide-2
+#| echo: false
+#| eval: true
+for (i in c(1:4)) {
+  print("Drink more wine...")
+}
+```
 
 ## Slide 2.2
 
