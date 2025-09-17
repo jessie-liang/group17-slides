@@ -33,7 +33,7 @@ print(a+b)
 - Drink wine
 ```{r}
 #| label: slide-2
-#| echo: false
+#| echo: true
 #| eval: true
 for (i in c(1:4)) {
   print("Drink more wine...")
