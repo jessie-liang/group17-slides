@@ -6,20 +6,28 @@ format:
     embed-resources: true
 ---
 
-# Section 1
+# Section 1 : Morning
 
 ## Slide 1.1
 
 - Turn off alarm
-- Get out of bed
+```{r}
+#| echo: false
+#| eval: true
+library(lubridate)
+```
 ```{r}
 #| label: slide-1
 #| echo: true
 #| eval: true
-a<-1
-b<-2
-print(a+b)
+
+print('Its already')
+print(hour(now()))
+print("o'clock!")
 ```
+
+- Get out of bed
+
 
 ## Slide 1.2
 
@@ -36,7 +44,7 @@ print("1 large pancake + 2 mini pancakes.")
 print("Together with a medium-sized matcha!")
 ```
 
-# Section 2
+# Section 2 : Evening
 
 ## Slide 2.1
 
